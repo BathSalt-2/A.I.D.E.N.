@@ -1,12 +1,22 @@
-# Sweep AI turns bug fixes & feature requests into code changes (https://sweep.dev)
-# For details on our config file, check out our docs at https://docs.sweep.dev
+# This is the configuration file for Sweep AI, a tool that turns bug fixes & feature requests into code changes.
+# The file is written in YAML format and contains various settings that control how Sweep operates.
 
-# If you use this be sure to frequently sync your default branch(main, master) to dev.
+# The 'branch' field specifies the default branch that Sweep will use for creating pull requests.
+# This is typically the main or master branch, and should be kept up-to-date with the latest changes.
 branch: 'main'
-# By default Sweep will read the logs and outputs from your existing Github Actions. To disable this, set this to false.
+
+# The 'gha_enabled' field controls whether Sweep will use the logs and outputs from your existing Github Actions.
+# If set to True (the default), Sweep will use this information to generate code changes.
+# If set to False, Sweep will not use this information and will instead rely on other sources.
 gha_enabled: True
-# This is the description of your project. It will be used by sweep when creating PRs. You can tell Sweep what's unique about your project, what frameworks you use, or anything else you want.
-# Here's an example: sweepai/sweep is a python project. The main api endpoints are in sweepai/api.py. Write code that adheres to PEP8.
+
+# The 'description' field provides a brief overview of your project, which will be used by Sweep when creating pull requests.
+# This is a great place to describe what your project does, what frameworks or technologies it uses, and any other relevant information.
+# If left blank, Sweep will use a default description.
 description: ''
 
-# Default Values: https://github.com/sweepai/sweep/blob/main/sweep.yaml
+# The 'default_values' field specifies the default values for various Sweep settings.
+# These values can be overridden in individual task configurations.
+# For more information on these settings, see the Sweep documentation.
+# Here's an example: https://github.com/sweepai/sweep/blob/main/sweep.yaml
+
