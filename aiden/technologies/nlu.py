@@ -10,7 +10,7 @@ class NLU:
 
         # Initializing the stop_words set with English stopwords
         self.stop_words = set(stopwords.words('english'))
-
+        
     def understand(self, text):
         # Tokenizing the input text into sentences
         tokenized = sent_tokenize(text)
