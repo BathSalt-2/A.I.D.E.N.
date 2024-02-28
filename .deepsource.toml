@@ -1,7 +1,9 @@
-version = 1
+# This is a configuration file for a code analysis tool.
 
-[[analyzers]]
-name = "python"
+version = 1  # The version of the configuration file format.
 
-  [analyzers.meta]
-  runtime_version = "3.x.x"
+[[analyzers]]  # A block defining an analyzer for a specific programming language.
+name = "python"  # The name of the language to analyze. In this case, Python.
+
+  [analyzers.meta]  # Meta information about the analyzer.
+  runtime_version = "3.x.x"  # The version of the runtime environment for the language. Here, it is any 3.x.x version of Python.
