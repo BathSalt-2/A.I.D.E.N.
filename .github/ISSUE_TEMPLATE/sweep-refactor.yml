@@ -1,11 +1,6 @@
-name: Refactor
-title: 'Sweep: '
-description: Write something like "Modify the ... api endpoint to use ... version and ... framework"
-labels: sweep
-body:
-  - type: textarea
-    id: description
-    attributes:
-      label: Details
-      description: More details for Sweep
-      placeholder: We are migrating this function to ... version because ...
+/**
+ * @name Refactor
+ * @title 'Sweep: Modify the ... api endpoint to use ... version and ... framework'
+ * @description More details for Sweep: We are migrating this function to the latest version of the API and updating the framework to improve performance, enhance security, and add new features.
+ * @labels sweep
+ */

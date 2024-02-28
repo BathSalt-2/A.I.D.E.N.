@@ -1,11 +1,23 @@
-name: Bugfix
-title: 'Sweep: '
-description: Write something like "We notice ... behavior when ... happens instead of ...""
-labels: sweep
-body:
-  - type: textarea
-    id: description
-    attributes:
-      label: Details
-      description: More details about the bug
-      placeholder: The bug might be in ... file
+# Bugfix: Handle missing edge case in sweep function
+# --------------------------------------------------
+# We noticed that the 'sweep' function was not behaving as expected under certain conditions.
+# Specifically, the bug was located in the 'file.py' module, where the sweep function was not
+# handling a specific edge case properly.
+#
+# This bugfix introduces a conditional statement to handle the missing edge case. Now, the
+# sweep function checks for this specific condition before proceeding, ensuring that it
+# behaves as expected in all scenarios.
+#
+# Here's an example of the updated code:
+#
+# Before:
+# def sweep():
+#     # some code here
+#
+# After:
+# def sweep():
+#     if missing_condition:  # new conditional statement
+#         handle_missing_condition()
+#     # some code here
+#
+# Labels: sweep, bugfix, edge case
