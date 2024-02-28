@@ -1,4 +1,4 @@
-name: Refactor
+name: refactor
 title: 'Sweep: '
 description: Write something like "Modify the ... api endpoint to use ... version and ... framework"
 labels: sweep
@@ -9,3 +9,6 @@ body:
       label: Details
       description: More details for Sweep
       placeholder: We are migrating this function to ... version because ...
+    description: Please provide a detailed description of the refactor task.
+    name: description
+    default: Modify the api endpoint to use version 2.0 and the new React framework
