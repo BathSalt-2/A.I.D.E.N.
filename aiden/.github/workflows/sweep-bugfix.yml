@@ -1,0 +1,11 @@
+name: bugfix
+title: 'Sweep:'
+description: This code is for fixing a specific bug.
+body:
+  - type: textarea
+    id: description
+    name: 'description'
+    attributes:
+      label: 'Details'
+      description: 'More details about the bug'
+      placeholder: 'The bug might be in ... file'
