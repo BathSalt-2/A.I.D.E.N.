@@ -8,12 +8,15 @@ branch: 'main'
 # The 'gha_enabled' field controls whether Sweep will use the logs and outputs from your existing Github Actions.
 # If set to True (the default), Sweep will use this information to generate code changes.
 # If set to False, Sweep will not use this information and will instead rely on other sources.
-gha_enabled: True
-
-# The 'description' field provides a brief overview of your project, which will be used by Sweep when creating pull requests.
-# This is a great place to describe what your project does, what frameworks or technologies it uses, and any other relevant information.
-# If left blank, Sweep will use a default description.
-description: ''
+gha_enabled: False
+description: 'Aiden is an autonomous AI agent platform for analyzing and generating AI agents for various tasks.'
+tasks:
+  - name: Run unit tests
+    command: pytest
+  - name: Build project
+    command: python setup.py build
+  - name: Deploy to server
+    command: scp -r dist/ user@server:path/to/deploy
 
 # The 'default_values' field specifies the default values for various Sweep settings.
 # These values can be overridden in individual task configurations.
