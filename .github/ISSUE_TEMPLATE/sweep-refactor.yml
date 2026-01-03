@@ -1,6 +1,14 @@
 /**
- * @name Refactor
+ * @name Refactor API endpoint
  * @title 'Sweep: Modify the ... api endpoint to use ... version and ... framework'
  * @description More details for Sweep: We are migrating this function to the latest version of the API and updating the framework to improve performance, enhance security, and add new features.
  * @labels sweep
  */
+ * @body:
+ *   - type: textarea
+ *     id: description
+ *     attributes:
+ *       label: Description
+ *       name: description
+ *       description: More details for Sweep
+ *       placeholder: We are migrating this function to ABC version because DEF framework is no longer supported.
